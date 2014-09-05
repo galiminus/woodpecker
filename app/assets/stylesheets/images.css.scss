@@ -32,6 +32,9 @@
 #show {
     position: fixed;
     padding-top: 40px;
+    @media(max-width: 800px) {
+        padding-top: 0;
+    }
 
     &:after {
 	content: '';
@@ -59,7 +62,7 @@
     }
 
     #image {
-	padding-top: 20px;
+	padding-top: 5px;
 	float: left;
 	#full {
 	    max-width: 870px;
