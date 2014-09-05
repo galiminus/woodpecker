@@ -1,0 +1,123 @@
+/*
+ *= require home
+ *= require images
+ *= require_self
+*/
+
+html {
+    body {
+	    padding: 0px;
+	    margin: 0px;
+	    background: #1c1c1c;
+
+	    font: 20px 'Varela Round', sans-serif;
+	    color: #fff;
+
+	    ul {
+	        padding: 0;
+	        margin: 0;
+	        li {
+		        list-style: none;
+	        }
+	    }
+
+	    a {
+	        color: #fff;
+	        text-decoration: none;
+	        &:hover {
+		        color: #08c;
+	        }
+	    }
+
+	    .navbar-inner, .container {
+	        width: 1120px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        position: relative;
+
+	        @media(max-width: 1130px) {
+		        width: 920px;
+	        }
+	        @media(max-width: 920px) {
+		        width: 80%;
+	        }
+	        @media(max-width: 800px) {
+		        width: 96%;
+	        }
+	    }
+
+	    input, textarea {
+	        font: 15px 'Varela Round', sans-serif;
+	        border: none;
+	        &:focus {
+		        outline: none;
+    	    }
+	        &[type="text"] {
+		        padding: 8px 10px 8px 10px;
+	        }
+	    }
+	    button {
+	        font: 15px 'Varela Round', sans-serif;
+	        padding: 8px 10px 8px 10px;
+	        background: #fff;
+	        color: #000;
+	        border: none;
+	    }
+    }
+
+    .navbar {
+	    position: fixed;
+	    background: #111;
+	    width: 100%;
+	    height: 40px;
+	    line-height: 40px;
+	    z-index: 5;
+	    @media(max-width: 800px) {
+	        position: relative;
+	    }
+
+
+	    form {
+	        margin-top: 6px;
+	        input {
+		        width: 240px;
+		        border: none;
+		        height: 20px;
+		        padding: 4px;
+		        float: left;
+	        }
+	        #total {
+		        float: right;
+		        line-height: 31px;
+		        min-width: 50%;
+		        text-align: right;
+	        }
+	        @media(max-width: 800px) {
+		        input {
+		            width: 100%;
+		            padding: 4px 0 4px 0;
+		        }
+		        #total {
+		            position: absolute;
+		            color: #000;
+		            right: 4px;
+		            display: inline;
+		            min-width: 0px;
+		        }
+	        }
+	    }
+    }
+
+    section {
+	    display: none;
+	    padding: 44px 0 0 0;
+	    width: inherit;
+	    &.default {
+	        display: block;
+	    }
+	    @media(max-width: 800px) {
+	        width: 100%;
+	        padding: 0;
+	    }
+    }
+}

@@ -1,0 +1,22 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title= content_for?(:title) ? yield(:title) : "Woodpecker"
+
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Varela+Round'
+    = analytics_init if Rails.env.production?
+    = stylesheet_link_tag "application", :media => "all"
+
+  body
+    .navbar
+      .navbar-inner
+        form
+          input#nav-query.search type='text' placeholder='search' name="q"
+          a#total
+    .container
+      = yield
+    = javascript_include_tag 'application'
+
