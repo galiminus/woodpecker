@@ -7,6 +7,7 @@ gem 'pg'
 
 gem 'kaminari'
 gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 
 gem 'slim'
 
