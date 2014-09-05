@@ -5,8 +5,8 @@ class Image < ActiveRecord::Base
 
   has_attachment  :file, accept: [:jpg, :png, :gif]
 
-  settings :index do
-    mappings do
+  settings index: { number_of_shards: 1 } do
+    mappings dynamic: 'true' do
       indexes tags:            { type: 'string', analyzer: 'keyword'   }
     end
   end
