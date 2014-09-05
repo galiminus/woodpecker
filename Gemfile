@@ -14,11 +14,11 @@ gem 'slim'
 gem 'attachinary'
 gem 'cloudinary'
 
-group :assets do
-  gem 'sass-rails', '~> 4.0.3'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'less', '~> 2.5.0'
-  gem 'therubyracer', :platforms => :ruby
+gem 'rails_12factor', group: :production
 
-  gem 'uglifier'
-end
+gem 'sass-rails', '~> 4.0.3'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'less', '~> 2.5.0'
+gem 'uglifier'
+
+
