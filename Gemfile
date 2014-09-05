@@ -21,4 +21,4 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'less', '~> 2.5.0'
 gem 'uglifier'
 
-
+gem 'therubyracer',  platforms: :ruby
