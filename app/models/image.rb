@@ -3,7 +3,7 @@ require 'elasticsearch/model'
 class Image < ActiveRecord::Base
   include Elasticsearch::Model
 
-  has_attachment  :file, accept: [:jpg, :png, :gif]
+  has_attachment :file, accept: [:jpg, :png, :gif]
 
   settings index: { number_of_shards: 1 } do
     mappings dynamic: 'true' do
