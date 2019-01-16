@@ -1,9 +1,7 @@
 source 'http://rubygems.org'
-ruby '2.1.0'
 
-gem 'rails', '~> 4.1.5'
-
-gem 'pg'
+gem 'rails', '~> 4.2.8'
+gem "pg", "~> 0.17", group: :production
 
 gem 'kaminari'
 gem 'elasticsearch-model'
