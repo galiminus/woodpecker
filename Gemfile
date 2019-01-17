@@ -20,3 +20,4 @@ gem 'less', '~> 2.5.0'
 gem 'uglifier'
 
 gem 'therubyracer',  platforms: :ruby
+gem 'responders', '~> 2.0'
