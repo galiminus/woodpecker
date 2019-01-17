@@ -7,7 +7,7 @@ class Image < ActiveRecord::Base
 
   settings index: { number_of_shards: 1 } do
     mappings dynamic: 'true' do
-      indexes tags:            { type: 'string', analyzer: 'standard'   }
+      indexes tags:            { type: 'string', analyzer: 'keyword'   }
     end
   end
 
