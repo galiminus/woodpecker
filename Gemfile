@@ -4,8 +4,8 @@ gem 'rails', '~> 4.2.8'
 gem "pg", "~> 0.17", group: :production
 
 gem 'kaminari'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
+gem 'elasticsearch-model', '~> 0.1.5'
+gem 'elasticsearch-rails', '~> 0.1.5'
 
 gem 'slim'
 
