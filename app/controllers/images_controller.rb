@@ -7,7 +7,7 @@ class ImagesController < ApplicationController
         params[:page] ||= 1
         params[:per_page] ||= 60
 
-        images = Image.search("#{query}*").page(params[:page]).results
+        images = Image.search("#{query}*").limit(params[:per_page]).page(params[:page]).results
         render json: {
           q:            query,
           total:        images.total,
