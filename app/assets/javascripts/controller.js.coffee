@@ -16,7 +16,7 @@ window.Controller = class Controller
   search: (router, query) =>
     load = (done) =>
       return done() unless @infinite_scroll
-      
+
       display_results = (results) =>
         @total ||= results.total
         @layout_view.total @total, @layout_view.query()
@@ -57,8 +57,7 @@ window.Controller = class Controller
     if window.innerWidth > 800
       @layout_view.overlay(true)
       @search_view.show()
-
-    @show_view.close_link(@layout_view.query(), @layout_view.total() > 0)
+    # @show_view.close_link(@layout_view.query(), @layout_view.total() > 0)
 
     query = @layout_view.query()
     window.Image.get id, (image) =>

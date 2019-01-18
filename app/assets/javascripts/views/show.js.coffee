@@ -12,6 +12,8 @@ window.views.Show = class ShowView extends window.views.BaseView
     @id("close").style.display = 'none';
     if query
       @router.link_to @id("close"), "/#{query}"
+    else
+      @router.link_to @id("close"), "/"
     if toggle
       @id("close").style.display = 'block';
 

@@ -21,3 +21,4 @@ gem 'uglifier'
 
 gem 'therubyracer',  platforms: :ruby
 gem 'responders', '~> 2.0'
+gem 'figaro'
